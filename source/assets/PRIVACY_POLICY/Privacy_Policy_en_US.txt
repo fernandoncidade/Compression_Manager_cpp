@@ -1,0 +1,45 @@
+PRIVACY POLICY FOR COMPRESSION MANAGER
+Last updated: November 22, 2026
+Version: 2026.11.22.0
+
+Your privacy, the confidentiality of your personal or organizational documents, and unrestricted sovereignty over your files are foundational principles of COMPRESSION MANAGER. This Privacy Policy explains clearly and transparently how COMPRESSION MANAGER ("Software") operates and how your information remains strictly under your local control.
+
+INDEPENDENCE FROM MICROSOFT PRIVACY STATEMENT:
+Microsoft does NOT provide a default privacy policy for COMPRESSION MANAGER, and this Software is NOT covered by any Microsoft privacy policy or the Microsoft Privacy Statement (https://www.microsoft.com/en-us/privacy/privacystatement). Data collected separately by Microsoft through the Microsoft Store platform (such as searches, downloads, updates, uninstalls, ratings, and reviews linked to your Microsoft account) or Windows OS diagnostic settings is governed solely by Microsoft's Privacy Statement. All operations performed inside COMPRESSION MANAGER are governed exclusively by this developer Privacy Policy.
+
+1. Foundational Principle: Local-First Architecture and Privacy by Design
+COMPRESSION MANAGER is engineered under Privacy by Default and Security by Design to run 100% locally and offline on your Windows workstation. No input file list, directory path, archived/extracted content, configuration setting, or execution log is ever transmitted, uploaded, copied, or synchronized with remote servers, cloud services, or third parties.
+
+2. Information Processed Locally by the Software
+The Software processes solely data explicitly provided or selected by the user:
+- Input and Destination Paths: Files and folders added via file dialogs or drag & drop for archiving (.rar in the Full Edition; .zip, .7z, .tar, and .wim in both Full and Standart editions), extraction, or integrity verification, together with user-selected output directory lists per format.
+- Local Preference Settings: Active UI language ("pt_BR" or "en_US") is saved locally in "%LOCALAPPDATA%\CompressionManager\language.json", and per-format compression methods/levels, archive update toggle, and output directories are stored in "%LOCALAPPDATA%\CompressionManager\config.json" (or the equivalent isolated MSIX container storage).
+- Local Diagnostic Execution Logs: Technical runtime logs saved locally in "%LOCALAPPDATA%\CompressionManager\logs\file_compression_yyyyMMdd_hhmmss.log" (managed via LogManager strictly on local disk).
+
+The Software DOES NOT collect, request, remotely store, or process Personally Identifiable Information (names, national/taxpayer IDs, phone numbers, email addresses, geographic location, biometrics, health records, financial records, or children's data).
+
+3. What the Software DOES NOT Collect or Transmit
+- No user account registration, authentication, or login.
+- No embedded telemetry, analytics SDKs, advertising modules, or online tracking.
+- No background HTTP/HTTPS connections to developer or third-party servers. (Bundled Qt 6 runtime libraries serve local GUI rendering and Windows platform/style plugins only and send no user data on behalf of the application.)
+- No background folder scanning beyond files and directories explicitly chosen by the user.
+
+4. Legal Basis and Declared MSIX Capability (LGPD / GDPR / Microsoft Store)
+- Local processing strictly serves to execute the archiving, extraction, and integrity-testing operations requested by the user and persist local user preferences (Brazilian LGPD — Law No. 13.709/2018, Art. 7, V and IX; requested functionality performance and legitimate interest under GDPR).
+- In Microsoft Store MSIX packages, AppxManifest.xml (identity fernandoncidade.COMPRESSIONMANAGER) declares exclusively the restricted capability <rescap:Capability Name="runFullTrust" />, strictly needed for native Win32 C++23 / Qt 6.12.0 desktop execution, standard Windows file pickers, and local subprocess invocation of 7-Zip (and WinRAR in the Full Edition), without accessing camera, microphone, location, or contacts.
+
+5. Local Integration with 7-Zip and WinRAR (Zero Application Telemetry)
+- Standart Edition: Locally invokes only the 7-Zip engine (7zG.exe / 7z.exe located in standard Windows paths or bundled plugins/7Z) on user-selected items.
+- Full Edition: Alongside 7-Zip, may locally invoke WinRAR.exe (from standard Windows paths or bundled plugins/WinRAR) exclusively when the user triggers RAR archive actions. No third-party license key file (rarreg.key) is ever packaged inside project distributions or installers.
+
+6. Data Subject Rights, Control, and Clean Uninstallation (Policy 10.2.7 / LGPD / GDPR)
+You retain full sovereignty over all local files and configuration:
+- Access, Editing, Portability, and Deletion: Created archives, exports, and local config.json, language.json, and logs/ files under %LOCALAPPDATA%\CompressionManager\ remain freely accessible for inspection or manual deletion at any time.
+- Clean Uninstallation: You may cleanly uninstall and remove COMPRESSION MANAGER at any time via Windows Settings -> Apps -> Installed Apps (or Start Menu -> Uninstall), removing application binaries, plugins, and MSIX state cleanly without leaving background services or drivers behind.
+
+7. Changes to This Policy and Contact (Individual Developer)
+Material updates to this Policy will update the version and date shown at the top. For privacy inquiries or technical support:
+Fernando Nillsson Cidade
+Email: linceu_lighthouse@outlook.com
+Official Repository: https://github.com/fernandoncidade/Compression_Manager_cpp
+Notice: Microsoft does not provide customer or technical support for this application.

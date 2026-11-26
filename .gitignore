@@ -1,0 +1,15 @@
+/.vscode/
+/build/
+/cmake/
+/library/
+/.vscode
+/build
+/cmake
+/library
+
+/mocks/INSTRUCOES_find_VersionEditor.txt
+/mocks/launch_detached_gui.cmake
+/mocks/limpar_build_qt6_regeneravel.ps1
+
+/CMakePresets.json
+/rascunho.cpp

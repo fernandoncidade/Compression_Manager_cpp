@@ -1,0 +1,50 @@
+THIRD-PARTY NOTICES AND ATTRIBUTIONS — COMPRESSION MANAGER
+Version 2026.11.22.0, November 22, 2026
+
+This document details the primary licensing of COMPRESSION MANAGER and all third-party libraries, compiler runtimes, and external compression engines integrated or invoked by the C++23 and Qt 6.12.0 application, fulfilling GNU AGPLv3, GNU LGPLv3 (including shared library replacement rights), BSD licenses, and upstream attribution notices.
+
+1. COMPRESSION MANAGER (DUAL LICENSING)
+   Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+   Official Repository: https://github.com/fernandoncidade/Compression_Manager_cpp
+   - Open Source Codebase (GitHub): Licensed under the GNU Affero General Public License version 3 (GNU AGPLv3, see LICENSE and LICENSES\GNU AFFERO GENERAL PUBLIC LICENSE Version 3.txt).
+   - Official Package / Microsoft Store / Signed Installers: Distributed free of charge under the Official EULA (EULA\EULA_en_US - Compression Manager.txt) and CLC (CLC\CLC_en_US - Compression Manager.txt).
+   - "AS IS" Notice: Free auxiliary desktop utility for archiving, extraction, and checksum verification, provided "AS IS" without warranties; the user retains full responsibility for maintaining independent backups of critical files.
+
+2. QT APPLICATION FRAMEWORK (C++ / WIDGETS — GNU LGPLv3 COMPLIANCE)
+   Version: 6.12.0
+   Copyright (C) The Qt Company Ltd. and contributors.
+   License: GNU Lesser General Public License version 3 (GNU LGPLv3 — see LICENSES\GNU LESSER GENERAL PUBLIC LICENSE Version 3.txt and GPL Version 3.txt).
+   Source code and official licensing: https://www.qt.io/licensing and https://code.qt.io/
+   Dynamic Library Replacement under LGPLv3:
+   - Qt libraries used by the application (Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll and plugins under plugins\platforms\, plugins\styles\, and plugins\imageformats\) are deployed as shared dynamic libraries (DLLs).
+   - Pursuant to GNU LGPLv3 Section 4(d)(1), users retain the freedom to replace these dynamic libraries in the application directory with compatible Qt 6.12.0 ABI-compatible builds.
+
+3. 7-ZIP (COMPRESSION, EXTRACTION & INTEGRITY ENGINE)
+   Copyright (C) 1999-2025 Igor Pavlov.
+   Integrated binaries and library (under plugins\7Z\ or standard system installation): 7zG.exe, 7z.exe, and 7z.dll.
+   Official 7-Zip licensing (see LICENSES\License.txt):
+   - 7z.dll: GNU LGPL v2.1+ as main license for most of the code, with specific modules under BSD 3-Clause, BSD 2-Clause, and the unRAR usage restriction.
+   - Other 7-Zip files: GNU LGPL v2.1+.
+   Official website and source code: https://www.7-zip.org/
+   Additional credits within 7-Zip code:
+   - Igor Pavlov — primary author of 7-Zip (GNU LGPL, BSD).
+   - Apple Inc. — LZFSE decompressor code (BSD 3-Clause).
+   - Facebook Inc. — ZSTD decompressor reference code (BSD 3-Clause).
+   - Yann Collet — XXH64 hashing code (BSD 2-Clause).
+   - Alexander Roshal — unRAR decompression code (subject to restriction prohibiting recreation of the proprietary RAR compression algorithm).
+
+4. WINRAR (EXTERNAL ENGINE — FULL EDITION ONLY)
+   Copyright (C) Alexander Roshal / win.rar GmbH.
+   Strict Edition Segregation:
+   - In the Standart Edition (ENABLE_RAR_SUPPORT=0), NO WinRAR files, binaries, or RAR references are included.
+   - In the Full Edition (ENABLE_RAR_SUPPORT=1), the application locally invokes WinRAR.exe (from standard Windows installation paths or plugins\WinRAR\ with its License.txt) solely when the user runs RAR archiving or RAR operations.
+   - No personal license or registration key (rarreg.key) is ever bundled in this repository, its distributions, or its installers. Users remain responsible for honoring WinRAR licensing terms applicable to their usage.
+
+5. COMPILER RUNTIMES & WINDOWS PLATFORM (MSVC / MINGW-W64 / WINDOWS SDK)
+   - MSVC Distributions: compiled with Microsoft Visual C++ 14.52.37025 and Windows SDK 10.0.28000.0 using clean app-local CRT deployment of the essential Microsoft.VC145.CRT DLLs (msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, vcruntime140.dll, vcruntime140_1.dll) without embedding vc_redist.x64.exe.
+   - MinGW-w64 Distributions: compiled with GCC 15.1.0 x64 alongside dynamic compiler runtime DLLs (libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll) covered by GNU GPLv3 with the GCC Runtime Library Exception version 3.1.
+
+6. PRIVACY, ZERO TELEMETRY AND CONTACT
+   - Runs strictly offline, storing config.json, language.json, and execution logs exclusively in %LOCALAPPDATA%\CompressionManager\.
+   - For source code requests under LGPL/AGPLv3 or licensing inquiries:
+     Fernando Nillsson Cidade — Email: linceu_lighthouse@outlook.com

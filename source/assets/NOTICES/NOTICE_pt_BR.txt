@@ -1,0 +1,50 @@
+AVISOS E ATRIBUIÇÕES DE TERCEIROS — COMPRESSION MANAGER
+Versão 2026.11.22.0, 22 de novembro de 2026
+
+Este documento relaciona o licenciamento principal do COMPRESSION MANAGER e todas as bibliotecas, compiladores e motores externos integrados ou invocados pelo aplicativo em C++23 e Qt 6.12.0, com o objetivo de cumprir integralmente as obrigações da GNU AGPLv3, GNU LGPLv3 (incluindo o direito de substituição de bibliotecas dinâmicas), licenças BSD e termos dos respectivos autores.
+
+1. COMPRESSION MANAGER (DUPLO LICENCIAMENTO)
+   Copyright (C) 2025-2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+   Repositório Oficial: https://github.com/fernandoncidade/Compression_Manager_cpp
+   - Código-Fonte Aberto (GitHub): Licenciado sob a GNU Affero General Public License versão 3 (GNU AGPLv3, arquivo LICENSE e LICENSES\GNU AFFERO GENERAL PUBLIC LICENSE Version 3.txt).
+   - Pacote Oficial / Microsoft Store / Instaladores Assinados: Distribuído gratuitamente sob o EULA Oficial (EULA\EULA_pt_BR - Compression Manager.txt) e CLC (CLC\CLC_pt_BR - Compression Manager.txt).
+   - Aviso "AS IS": Aplicativo gratuito auxiliar para empacotamento, extração e verificação de integridade, fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), sem garantias, mantendo o usuário exclusiva responsabilidade por cópias de segurança independentes de seus dados.
+
+2. QT APPLICATION FRAMEWORK (C++ / WIDGETS — CONFORMIDADE GNU LGPLv3)
+   Versão: 6.12.0
+   Copyright (C) The Qt Company Ltd. e demais contribuidores.
+   Licença: GNU Lesser General Public License versão 3 (GNU LGPLv3 — ver LICENSES\GNU LESSER GENERAL PUBLIC LICENSE Version 3.txt e GPL Version 3.txt).
+   Código-fonte e informações oficiais: https://www.qt.io/licensing e https://code.qt.io/
+   Substituição de DLLs sob LGPLv3:
+   - As bibliotecas do Qt utilizadas pelo aplicativo (Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll e plugins em plugins\platforms\, plugins\styles\ e plugins\imageformats\) são implantadas como bibliotecas dinâmicas compartilhadas (DLLs).
+   - Conforme a Seção 4(d)(1) da GNU LGPLv3, o usuário tem o direito de substituir essas bibliotecas dinâmicas na pasta de instalação do executável por versões modificadas compatíveis com a ABI binária do Qt 6.12.0.
+
+3. 7-ZIP (MOTOR DE COMPRESSÃO, EXTRAÇÃO E VERIFICAÇÃO DE INTEGRIDADE)
+   Copyright (C) 1999-2025 Igor Pavlov.
+   Executáveis e biblioteca integrados (pasta plugins\7Z\ ou instalação do sistema): 7zG.exe, 7z.exe e 7z.dll.
+   Licenciamento oficial do 7-Zip (ver LICENSES\License.txt):
+   - 7z.dll: GNU LGPL v2.1+ como licença principal para a maior parte do código, com trechos específicos sob BSD 3-Clause, BSD 2-Clause e restrição unRAR.
+   - Demais arquivos do 7-Zip: GNU LGPL v2.1+.
+   Site oficial e código-fonte: https://www.7-zip.org/
+   Créditos adicionais incorporados no 7-Zip:
+   - Igor Pavlov — autor principal do 7-Zip (GNU LGPL, BSD).
+   - Apple Inc. — algoritmo de descompressão LZFSE (BSD 3-Clause).
+   - Facebook Inc. — algoritmo de descompressão ZSTD (BSD 3-Clause).
+   - Yann Collet — algoritmo XXH64 (BSD 2-Clause).
+   - Alexander Roshal — código de descompressão unRAR (sujeito à restrição de não recriação do algoritmo proprietário de compressão RAR).
+
+4. WINRAR (MOTOR EXTERNO — EXCLUSIVO DA EDIÇÃO FULL)
+   Copyright (C) Alexander Roshal / win.rar GmbH.
+   Escopo rigoroso de edição:
+   - Na Edição Standart (ENABLE_RAR_SUPPORT=0), NÃO há qualquer integração, referência binária ou arquivo do WinRAR.
+   - Na Edição Full (ENABLE_RAR_SUPPORT=1), o aplicativo invoca localmente o binário WinRAR.exe (instalado no sistema ou disponibilizado em plugins\WinRAR\ com seu respectivo License.txt) exclusivamente quando o usuário solicita operações RAR.
+   - Nenhuma chave de registro ou licença pessoal (rarreg.key) acompanha o repositório, as distribuições ou os instaladores do COMPRESSION MANAGER. O usuário é responsável por observar os termos de licenciamento do WinRAR aplicáveis ao seu uso.
+
+5. RUNTIME DE COMPILADOR E PLATAFORMA WINDOWS (MSVC / MINGW-W64 / WINDOWS SDK)
+   - Distribuições MSVC: compiladas com Microsoft Visual C++ 14.52.37025 e Windows SDK 10.0.28000.0, distribuindo localmente (app-local) apenas as DLLs redistribuíveis essenciais (Microsoft.VC145.CRT: msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, vcruntime140.dll, vcruntime140_1.dll), sem embutir o pacote completo vc_redist.x64.exe.
+   - Distribuições MinGW-w64: compiladas com GCC 15.1.0 x64, acompanhadas das bibliotecas dinâmicas de runtime (libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll) cobertas pela GNU GPLv3 com GCC Runtime Library Exception versão 3.1.
+
+6. PRIVACIDADE, ZERO TELEMETRIA E CONTATO
+   - O aplicativo opera integralmente offline, mantendo config.json, language.json e logs locais apenas em %LOCALAPPDATA%\CompressionManager\.
+   - Para pedidos de código-fonte sob LGPL/AGPLv3 ou dúvidas de licenciamento:
+     Fernando Nillsson Cidade — E-mail: linceu_lighthouse@outlook.com

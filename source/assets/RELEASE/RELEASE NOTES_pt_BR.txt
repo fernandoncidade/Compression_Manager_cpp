@@ -1,0 +1,187 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.22.0
+22 de novembro de 2026
+
+Resumo da Atualização:
+Esta versão torna o Compression Manager ainda mais leve para instalar, mais claro nas informações apresentadas ao usuário e mais confiável no uso diário. A organização entre a Edição Full (com suporte aos formatos RAR, ZIP, 7Z, TAR e WIM) e os recursos informativos do programa foi totalmente revisada e validada para garantir uma experiência consistente, segura e livre de arquivos desnecessários.
+
+Funcionalidades e Recursos Aprimorados:
+- Pacotes e Instaladores Mais Enxutos e Limpos: A instalação passou a levar apenas os componentes essenciais para o funcionamento do programa, removendo arquivos supérfluos e eliminando a necessidade de instaladores extras de terceiros. O resultado é uma instalação mais rápida e com menor ocupação de espaço em disco.
+- Separação Aprimorada da Edição Full: Os recursos de empacotamento nos formatos RAR, ZIP, 7Z, TAR e WIM, bem como a descompactação e o teste de integridade, permanecem reunidos de maneira organizada, sem inclusão de arquivos pessoais extras ou componentes alheios ao aplicativo.
+- Confiabilidade Geral Validada em Todas as Funções: Todas as rotinas principais de trabalho passaram por verificações abrangentes — incluindo empacotamento em segundo plano, atualização de pacotes existentes sem recriá-los do zero, extração de formatos compostos preservando as pastas originais, verificação de integridade sem gravar no disco, arrastar e soltar direto do Windows, troca de idioma ao vivo e alternância entre o Layout Padrão e o Layout Duplo com a janela maximizada.
+- Transparência, Licenças e Privacidade Atualizadas: As seções informativas da janela Sobre (histórico, detalhes, licenças, avisos, política de privacidade e notas de versão) e os termos que acompanham o aplicativo foram revisados e sincronizados em Português e Inglês, deixando ainda mais claro o funcionamento totalmente local e offline, a independência do projeto e a remoção limpa pelo menu do Windows.
+
+O que muda para você:
+- Instalação mais leve, direta e organizada no Windows, sem etapas adicionais desnecessárias.
+- Maior segurança ao compactar, extrair e testar arquivos importantes, com todas as funções validadas.
+- Documentação e informações dentro do programa mais claras e fáceis de consultar em Português e Inglês.
+
+Como verificar:
+- Abra a janela Opções > Sobre e navegue pelas abas Sobre, Histórico, Licenças, Avisos, Política de Privacidade e Notas de Versão para conferir os textos atualizados.
+- Alterne entre Português e Inglês em Configurações > Idiomas e confirme a tradução imediata de menus, botões e diálogos.
+- Adicione arquivos ou pastas arrastando do Windows, alterne para o Segundo Layout em janela maximizada e realize um teste de compactação, extração e verificação de integridade.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão 2026.10.17.0
+17 de outubro de 2026
+
+Resumo da Atualização:
+Esta versão consolida melhorias fundamentais de estabilidade e fluidez na interface visual do Compression Manager. A transição entre os modos de exibição (Layout Padrão e Segundo Layout) agora é imediata e completamente suave, com suporte total ao uso em tela cheia e janela maximizada, assegurando máxima produtividade ao manipular múltiplos formatos como RAR, ZIP, 7Z, TAR e WIM.
+
+Funcionalidades e Recursos Aprimorados:
+- Transição de Layout Totalmente Estável: Ativação e desativação instantânea do Segundo Layout (Layout Duplo), permitindo alternar livremente entre as visualizações sem qualquer instabilidade ou encerramento inesperado.
+- Preservação Rigorosa da Janela Maximizada: Ao alternar de layout com a janela maximizada, o aplicativo permanece perfeitamente maximizado, eliminando desajustes visuais e preservando o espaço total da sua tela.
+- Adaptação Fluida ao Seu Monitor: No Segundo Layout, os painéis reorganizam-se de modo contínuo (lado a lado ou empilhados) de acordo com o tamanho da janela, permitindo configurar e acompanhar formatos distintos (como RAR e ZIP) simultaneamente.
+- Continuidade Total das Tarefas: Suas seleções de arquivos, listas de pastas de saída e opções de compressão permanecem intactas ao alternar entre os modos de exibição.
+
+O que muda para você:
+- Liberdade e confiança para usar o programa maximizado e alternar layouts a qualquer instante sem perder o foco.
+- Navegação muito mais suave e agradável em monitores de qualquer resolução.
+- Facilidade ampliada para organizar fluxos de empacotamento simultâneos em múltiplos formatos.
+
+Como verificar:
+- Abra o aplicativo e maximize a janela principal.
+- Acesse o menu Configurações > Layouts e ative ou desative o Segundo Layout.
+- Observe que a janela mantém-se maximizada com transição imediata e painéis perfeitamente posicionados.
+- Prepare arquivos para compressão nos formatos RAR, ZIP ou outros e alterne os layouts com total tranquilidade.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão 2026.10.16.0
+16 de outubro de 2026
+
+Resumo da Atualização:
+Esta versão apresenta uma modernização completa de toda a estrutura do Compression Manager, proporcionando uma experiência de uso muito mais rápida, suave e confiável. O aplicativo agora abre instantaneamente, consome menos memória do computador e realiza todas as tarefas com máxima estabilidade e eficiência.
+
+Funcionalidades e Recursos:
+- Suporte Abrangente de Compressão: Criação e empacotamento de arquivos nos formatos RAR, ZIP, 7Z, TAR e WIM.
+- Motores de Alta Performance: Integração nativa e eficiente com os motores de compressão 7-Zip e WinRAR.
+- Descompactação Universal: Extração rápida de arquivos em múltiplos formatos (.rar, .zip, .7z, .tar, .wim, .iso e outros), preservando a estrutura original de pastas.
+- Níveis de Compressão Personalizáveis: Opções de compactação que vão desde o arquivamento imediato sem compressão (Store) até a máxima economia de espaço em disco (Ultra).
+- Novo Modo de Layout Duplo: Uma nova opção de visualização divide a tela em painéis paralelos, permitindo configurar e acompanhar múltiplos métodos de compressão ao mesmo tempo, sem sobreposições.
+- Adaptação Automática de Tela: No Layout Duplo, ao redimensionar ou maximizar a janela, os painéis se reorganizam automaticamente (na horizontal ou vertical) para aproveitar todo o espaço disponível.
+- Fila de Processamento em Segundo Plano: Operações de compactação e extração rodam em segundo plano. Você pode continuar mexendo no programa e organizando outros arquivos sem travamentos ou congelamentos de tela.
+- Múltiplos Diretórios de Destino: Cada formato possui uma lista própria e memorizada de pastas de saída favoritas.
+- Arrastar e Soltar Direto do Windows: Arraste arquivos e pastas diretamente do Windows Explorer para dentro da lista do programa com total praticidade.
+- Verificação de Integridade sem Extração: Teste se um arquivo compactado está íntegro ou corrompido antes de armazená-lo ou compartilhá-lo, sem precisar extrair nada para o disco.
+- Atualização Prática de Pacotes: Opção para adicionar ou atualizar novos arquivos em pacotes existentes sem precisar recriá-los do zero.
+- Manual do Usuário Integrado: Manual completo e explicativo acessível diretamente pelo menu superior.
+- Alternância Imediata de Idioma: Troca instantânea entre Português e Inglês em tempo de execução sem reiniciar o programa.
+- Instalação Rápida e Otimizada: Pacotes de instalação mais leves e ágeis.
+- Privacidade e Modo Offline: Operação 100% local e segura, sem qualquer envio de dados pela rede.
+
+O que muda para você:
+- O aplicativo responde de forma imediata aos seus comandos e inicia muito mais rápido.
+- Maior flexibilidade e produtividade com o novo Layout Duplo e adaptação dinâmica ao seu monitor.
+- Segurança reforçada para testar seus arquivos compactados antes do envio ou arquivamento.
+
+Como verificar:
+- Abra o aplicativo e sinta a rapidez na inicialização.
+- Verifique a lista completa de formatos de empacotamento disponíveis (RAR, ZIP, 7Z, TAR e WIM).
+- Alterne entre o Layout Padrão e o Layout Duplo e redimensione a janela para observar a adaptação automática.
+- Realize testes de compressão, extração e verificação de integridade.
+- Consulte o novo Manual do Usuário no menu de ajuda.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão 2026.8.9.0
+9 de agosto de 2026
+
+O que foi feito:
+- Adicionado suporte para empacotamento de arquivos no formato RAR.
+- Implementação de um novo layout duplo na interface, permitindo gerenciar as opções de compressão de forma mais organizada.
+- Ajuste na interface para se adaptar dinamicamente ao novo formato de tela.
+- O sistema interno de gerenciamento de versões agora sincroniza a data automaticamente com o sistema operacional.
+- O manual de instruções interno e os idiomas do sistema foram atualizados para abranger essas novidades.
+
+O que muda para você:
+- Agora você pode criar arquivos RAR diretamente pelo aplicativo.
+- A navegação na interface ficou mais flexível, aproveitando melhor o espaço da tela com o novo layout.
+- Processos internos mais ágeis e organizados.
+
+Como verificar:
+- Atualize e abra o programa.
+- Verifique a disponibilidade do formato RAR nas opções de empacotamento.
+- Teste a nova disposição da interface ao configurar seus arquivos e redimensionar a janela.
+- Acesse o manual do usuário para ver as instruções atualizadas.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão: 0.0.4.0
+09 de Dezembro de 2025
+
+O que foi feito:
+- Correção visual: foi ajustado o cálculo da largura da coluna onde ficam os rótulos e botões de saída, evitando que parte do texto dos rótulos ("Especificar Saída", "Armazenar ..." e "Limpar Saída") seja cortada.
+
+O que muda para você:
+- Melhor leitura: os rótulos agora aparecem completos, sem partes cortadas.
+- Sem alteração no comportamento: as caixas de entrada/listas de diretório mantêm o mesmo comportamento e continuam compartilhando uma largura coerente entre os métodos (ZIP, 7Z, TAR, WIM e Extração). A lógica que iguala a largura entre as caixas foi preservada.
+
+Como verificar:
+- Atualize e abra o programa.
+- Abra a seção de métodos de compressão (ZIP, 7Z, TAR, WIM e Extração).
+- Confirme que os rótulos e botões da coluna esquerda aparecem completos, inclusive ao usar rótulos mais longos ou trocar o idioma.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão: 0.0.3.0
+18 de Novembro de 2025
+
+O que foi feito:
+- Ajuste visual: as caixas que mostram os diretórios de saída/extração agora ficam alinhadas pela borda esquerda em todos os métodos (ZIP, 7Z, TAR, WIM e Extração).
+
+O que muda para você:
+- Interface mais limpa e fácil de ler.
+- Nenhuma alteração no funcionamento — apenas melhoria visual.
+
+Como verificar:
+- Atualize e abra o programa.
+- Confira o alinhamento das caixas de saída para cada método.
+- Opcional: testar com rótulos longos ou outro idioma para confirmar.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão: 0.0.2.0
+28 de Outubro de 2025
+
+Resumo:
+Foram implementadas melhorias na estabilidade geral, correções de bugs.
+
+Funcionalidades principais:
+- O propósito do aplicativo permanece o mesmo: um utilitário gráfico leve para Windows projetado para empacotamento, extração e verificação de integridade de arquivos e pastas. Oferece suporte a múltiplos formatos (ZIP, 7Z, TAR, WIM e outros reconhecidos pelo 7‑Zip), seleção de vários diretórios de saída, métodos de compressão configuráveis, fila de processos e operação via arrastar-e-soltar. A interface é multilíngue (pt_BR / en_US) e preparada para empacotamento como executável (distribuição sem necessidade de instalação manual de dependências Python). Não foram adicionados novos recursos, preservando a simplicidade e o foco do aplicativo.
+
+
+__________________________________________________________
+
+
+NOTAS DE LANÇAMENTO: Versão: 0.0.1.0
+07 de Outubro de 2025
+
+Resumo:
+Manager Compression é um utilitário gráfico leve para Windows projetado para empacotamento, extração e verificação de integridade de arquivos e pastas. Oferece suporte a múltiplos formatos (ZIP, 7Z, TAR, WIM e outros reconhecidos pelo 7‑Zip), seleção de vários diretórios de saída, métodos de compressão configuráveis, fila de processos e operação via arrastar-e-soltar. A interface é multilíngue (pt_BR / en_US) e preparada para empacotamento como executável (distribuição sem necessidade de instalação manual de dependências Python).
+
+Funcionalidades principais:
+- Compressão de pastas e arquivos nos formatos .zip, .7z, .tar e .wim.
+- Extração de arquivos compactados em diversos formatos suportados pelo 7‑Zip (.rar, .zip, .7z, .tar, .wim, .bz2, .tar.xz, .tgz, .tar.gz, .zipx, .lzh, .iso etc.).
+- Seleção e manutenção de múltiplos diretórios de saída por formato.
+- Arrastar e soltar (drag & drop) para adicionar arquivos e pastas às listas de entrada e saída.
+- Métodos de compressão configuráveis por formato (níveis 0–9 onde aplicável) e persistência das preferências.
+- Modo "Armazenar como" para criar pacotes com ajustes específicos sem alterar as configurações padrões.
+- Atualização de arquivos existentes (opção de atualizar arquivos compactados em vez de recriá‑los).
+- Teste de integridade de arquivos compactados (comando "t" do 7‑Zip) para validar pacotes.
+- Fila de compressão: novos pedidos podem aguardar enquanto outra tarefa do mesmo formato é executada.
+- Mensagens e diálogos traduzíveis; troca de idioma em tempo de execução.
+- Janela "Sobre" que exibe texto de descrição, histórico, licenças, avisos e política de privacidade carregados a partir dos recursos incluídos.
+- Operação offline: todos os dados são locais (arquivos de configuração e preferências armazenados no diretório persistente do usuário).

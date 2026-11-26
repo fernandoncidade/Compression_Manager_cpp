@@ -1,0 +1,59 @@
+LICENÇA DE USO DE USUÁRIO FINAL (EULA) — COMPRESSION MANAGER
+Versão 2026.11.22.0, 22 de novembro de 2026
+
+Copyright (c) 2025-2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+
+AVISO DE DUPLO LICENCIAMENTO E INDEPENDÊNCIA DA MICROSOFT:
+1. Os termos deste Contrato de Licença de Usuário Final (EULA) aplicam-se EXCLUSIVAMENTE ao pacote binário pré-compilado, empacotado e assinado digitalmente distribuído oficialmente pelo autor na Microsoft Store e nos instaladores oficiais do COMPRESSION MANAGER. Para aquisições via Microsoft Store, estes termos complementam os Termos de Licença Padrão para Aplicativos da Microsoft Store; em caso de conflito, prevalecem os termos mínimos obrigatórios da Microsoft Store e da legislação consumerista aplicável.
+2. O código-fonte completo em C++23 e Qt 6.12.0 deste projeto é público no GitHub sob a Licença GNU Affero General Public License v3 (GNU AGPLv3), garantindo ampla liberdade para estudo, auditoria, compilação independente (nas edições Full e Standart), modificação e criação de forks sob os termos da AGPLv3.
+3. A Microsoft NÃO presta suporte técnico ao cliente por este aplicativo e NÃO cobre o Software sob nenhuma política de privacidade da Microsoft.
+
+Ao instalar ou utilizar o pacote oficial do COMPRESSION MANAGER, você concorda integralmente com este EULA. Caso discorde, não instale nem utilize o pacote e realize sua remoção limpa pelos controles do Windows.
+
+TERMOS E CONDIÇÕES:
+
+1. DEFINIÇÕES
+   "Licenciador": Fernando Nillsson Cidade, detentor exclusivo dos direitos autorais sobre o código original do Software.
+   "Software": O aplicativo COMPRESSION MANAGER compilado para Windows x64 em C++23 / Qt 6.12.0 (disponível nas edições Full — formatos RAR, ZIP, 7Z, TAR e WIM — e Standart — formatos abertos ZIP, 7Z, TAR e WIM), incluindo executável, catálogos de idioma, assets legais e documentação anexa.
+   "Licenciado" ou "Você": Pessoa física ou jurídica que obteve o pacote oficial na Microsoft Store, via instalador oficial ou por canal autorizado.
+
+2. CONCESSÃO DE LICENÇA E DESINSTALAÇÃO LIMPA
+   O Licenciador concede licença gratuita (ou comercial conforme contrato específico CLC em anexo apartado, quando contratado), pessoal, não exclusiva, intransferível e revogável para instalar e executar o Software em dispositivos Windows compatíveis como ferramenta utilitária auxiliar para empacotamento, descompactação e verificação de integridade de arquivos e pastas locais.
+   O Usuário possui o direito garantido de desinstalar e remover o Software de maneira limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar serviços ocultos, drivers ou processos em execução em segundo plano.
+
+3. RESTRIÇÕES SOBRE O PACOTE OFICIAL
+   Salvo autorização expressa em contrato comercial escrito ou direito imperativo previsto em lei, o Licenciado não poderá:
+   a) Revender comercialmente de forma paga, alugar, arrendar ou sublicenciar o pacote binário oficial distribuído gratuitamente pelo autor;
+   b) Remover ou adulterar avisos de copyright, atribuições de terceiros (NOTICES/LICENSES) ou marcas identificadoras do projeto;
+   c) Utilizar o Software para fins ilícitos ou em violação à legislação aplicável.
+
+4. PROPRIEDADE INTELECTUAL E COMPONENTES DE TERCEIROS
+   O pacote binário oficial é licenciado, não vendido, protegido pela Lei nº 9.609/1998, pela Lei nº 9.610/1998 e por tratados internacionais.
+   - Os componentes de terceiros seguem estritamente suas respectivas licenças disponíveis em NOTICES/ e LICENSES/, incluindo:
+     • Qt 6.12.0 (Core, Gui, Widgets e plugins): GNU LGPLv3;
+     • 7-Zip (7zG.exe, 7z.exe, 7z.dll): GNU LGPL, BSD-2-Clause, BSD-3-Clause e restrição unRAR (Igor Pavlov, Apple Inc., Facebook Inc., Yann Collet, Alexander Roshal);
+     • MinGW-w64 / GCC Runtime (em compilações MinGW): GPLv3 com GCC Runtime Library Exception; e Microsoft Visual C++ Runtime / Windows SDK (em compilações MSVC app-local);
+     • WinRAR (WinRAR.exe — exclusivamente na Edição Full): software proprietário de win.rar GmbH / Alexander Roshal, invocado localmente conforme licença de seu titular (nenhum arquivo rarreg.key acompanha este pacote).
+
+5. ESCOPO TÉCNICO, USO AUXILIAR, BACKUPS E RESPONSABILIDADE
+   a) Operações de compressão e extração dependem da presença dos binários externos do 7-Zip (e do WinRAR na Edição Full para geração de arquivos .rar), localizados na subpasta plugins\ do pacote ou nas pastas padrão do Windows.
+   b) Embora o aplicativo conte com verificação de integridade (comando 't') e fila assíncrona, trata-se de software utilitário gratuito sujeito a limitações de ambiente, sistema de arquivos, permissões e falhas de hardware/terceiros.
+   c) É responsabilidade exclusiva do usuário executar o teste de integridade após compactações importantes e manter cópias de segurança redundantes e independentes antes de mover, compactar ou sobrescrever documentos relevantes.
+
+6. PRIVACIDADE E SOBERANIA LOCAL DOS DADOS
+   O COMPRESSION MANAGER opera 100% offline, sem telemetria e sem conexões de rede. Preferências locais (config.json, language.json) e logs de execução (logs\) são gravados exclusivamente em %LOCALAPPDATA%\CompressionManager\ (ou contêiner isolado do pacote MSIX) e regidos pela Política de Privacidade própria em PRIVACY_POLICY\Privacy_Policy_pt_BR.txt.
+
+7. ATUALIZAÇÕES E SUPORTE TÉCNICO
+   Atualizações são publicadas voluntariamente via GitHub e Microsoft Store. A Microsoft não fornece suporte ao cliente para este Software. O suporte gratuito do autor (pessoa física) ocorre exclusivamente em regime voluntário de melhores esforços pelo e-mail linceu_lighthouse@outlook.com ou pelo repositório https://github.com/fernandoncidade/Compression_Manager_cpp.
+
+8. VIGÊNCIA E RESCISÃO
+   Esta licença vigora até rescisão pelo usuário (mediante desinstalação limpa) ou rescisão automática em caso de violação de suas cláusulas.
+
+9. ISENÇÃO DE GARANTIAS ("AS IS")
+   Na extensão máxima permitida em lei (e em harmonia com as Seções 15 e 16 da GNU AGPLv3 e com a Lei nº 9.609/1998), o Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), "COM TODAS AS SUAS FALHAS", sem garantias explícitas ou implícitas de comercialização, operação ininterrupta, compatibilidade universal ou adequação a um propósito específico, ressalvados os direitos irrenunciáveis da legislação consumerista aplicável.
+
+10. LIMITAÇÃO DE RESPONSABILIDADE
+    Na extensão máxima permitida pela legislação imperativa, o Licenciador não responderá por lucros cessantes, perda de arquivos não copiados em backup independente, danos indiretos, incidentais ou consequenciais decorrentes do uso ou impossibilidade de uso do Software.
+
+11. LEGISLAÇÃO APLICÁVEL E FORO
+    Esta Licença é regida pelas leis da República Federativa do Brasil, respeitadas as normas imperativas de proteção ao consumidor vigentes na jurisdição do usuário, elegendo-se, quando cabível, o foro da Comarca de São José dos Pinhais, Estado do Paraná, Brasil.

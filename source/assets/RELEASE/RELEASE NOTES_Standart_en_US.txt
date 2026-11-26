@@ -1,0 +1,184 @@
+RELEASE NOTES: Version 2026.11.22.0
+November 22, 2026
+
+Update Summary:
+This release makes Compression Manager noticeably lighter to install, clearer across its built-in information panels, and even more dependable in everyday use. The Standart Edition has been thoroughly reviewed to reinforce its dedicated focus on open formats (ZIP, 7Z, TAR, and WIM), ensuring a fast, streamlined, offline experience free of unnecessary files.
+
+Features and Enhancements:
+- Leaner, Cleaner Packages and Installers: Setup packages now ship strictly with the essential components needed for the application to run, removing superfluous items and eliminating separate third-party installer bundles. Installations complete faster and use less disk space.
+- Exclusive Focus on Open Archive Formats: Menus, action panels, built-in manual, and release information in the Standart Edition remain dedicated purely to ZIP, 7Z, TAR, WIM, and broad open-format extraction, keeping the experience uncluttered.
+- End-to-End Reliability Validated Across Core Workflows: Every everyday capability underwent thorough verification — including background archiving, updating existing packages without rebuilding from scratch, extracting compound archives while preserving original folder structures, non-destructive integrity checking, direct Windows drag and drop, live language switching, and toggling between Standard Layout and Dual Layout while keeping the window maximized.
+- Updated Transparency, Licensing & Privacy Disclosures: All tabs inside the About window (Details, History, Licenses, Notices, Privacy Policy, and Release Notes) and bundled informational texts were refreshed and synchronized in English and Brazilian Portuguese, highlighting 100% offline operation, developer support channels, and clean Windows removal.
+
+What this means for you:
+- Faster, smaller, and uncluttered installation on Windows with zero extra third-party prompts.
+- Greater confidence when packaging, extracting, and checking open archive formats every day.
+- Clearer, up-to-date in-app licensing, privacy, and support details in both English and Portuguese.
+
+How to verify:
+- Open Options > About and browse History, Details, Licenses, Notices, Privacy Policy, and Release Notes to review the updated disclosures.
+- Switch between English and Portuguese in Settings > Languages to confirm instant UI updates across menus, buttons, and dialogs.
+- Drag folders or files from Windows into the window, enable Second Layout while maximized, and run ZIP or 7Z compression, extraction, and integrity test tasks.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version 2026.10.17.0
+October 17, 2026
+
+Update Summary:
+This release significantly improves visual stability and interface navigation, focusing particularly on layout switching and full-screen or maximized window workflows. Toggling between the standard view and the Dual Layout now operates smoothly, quickly, and reliably, ensuring an uninterrupted workflow when working with open formats such as ZIP, 7Z, TAR, and WIM.
+
+Features and Enhancements:
+- Enhanced Layout Switching: Activating and deactivating the Second Layout (Dual Layout) is now instantaneous and completely stable, even when the window is maximized or resized.
+- Window State Preservation: The application window reliably maintains its maximized state when switching views, eliminating visual glitches or unexpected exits from full screen.
+- Fluid Visual Adaptation: Parallel panels automatically adapt to your monitor dimensions, making it effortless to configure multiple compression methods side by side (such as ZIP and 7Z simultaneously).
+- Operational Continuity: Your file lists, selected output folders, and packaging settings remain fully preserved during any layout transition.
+
+What this means for you:
+- Complete peace of mind when using the app maximized and toggling layouts at any time.
+- A smoother, more dependable interface without interruptions during file management.
+- Improved productivity when preparing and monitoring parallel compression tasks side-by-side.
+
+How to verify:
+- Open the application and maximize the main window.
+- In Settings > Layouts, toggle the Second Layout on and off.
+- Notice that the window stays maximized and panels adapt promptly and cleanly.
+- Add files for compression in ZIP, 7Z, or other formats and switch view modes seamlessly.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version 2026.10.16.0
+October 16, 2026
+
+Update Summary:
+This release delivers a comprehensive modernization of the entire Compression Manager foundation, delivering a faster, smoother, and exceptionally stable user experience. The program now opens instantaneously, uses significantly less system memory, and runs operations with maximum reliability and efficiency.
+
+Features and Enhancements:
+- Open Format Archiving: Create archives in ZIP, 7Z, TAR, and WIM formats.
+- High-Performance Engine: Native and seamless integration with the open 7-Zip backend, ensuring a lightweight and rapid experience.
+- Fast Extraction: Efficient extraction across supported open formats (.zip, .7z, .tar, .wim, .iso, and others), preserving original folder structures.
+- Granular Compression Levels: Compression profiles ranging from instantaneous storage (Store) to maximum space savings (Ultra).
+- New Dual Layout Mode: A modern split workspace displays parallel quadrants side-by-side, enabling you to configure and monitor multiple compression tasks at the same time without toggling tabs.
+- Adaptive Screen Orientation: When resizing or maximizing the window in Dual Layout, panels automatically reorient (horizontally or vertically) to maximize usable screen space.
+- Background Processing Queue: Compression and extraction operations run smoothly in the background. You can continue organizing files and queuing new tasks without the interface freezing or stuttering.
+- Multiple Destination Folders: Every compression format and the extraction tool remember their own individual list of favorite destination folders.
+- Seamless Drag and Drop: Drag files and folders directly from Windows Explorer into the application for immediate queuing.
+- Non-Destructive Integrity Testing: Verify whether an archive is healthy or corrupted before sharing or storing it, without extracting any files to disk.
+- Archive Updating: Easily append or refresh files inside existing archives without recreating them from scratch.
+- Integrated User Manual: Comprehensive built-in help guide accessible directly from the top menu.
+- Instant Language Switching: Switch between Portuguese and English at any time from the menu bar without having to restart the application.
+- Lighter, Optimized Installers: Setup packages have been streamlined for smaller file sizes, enabling faster downloads and quick installations.
+- Complete Privacy & Offline Operation: The application runs 100% locally with zero internet access, ensuring all your data remains strictly on your computer.
+
+What this means for you:
+- Instant application startup and fast, responsive operation.
+- Greater workspace control with Dual Layout and automatic screen adaptation.
+- Confidence that your archives are error-free before archiving or sending them.
+
+How to verify:
+- Launch the application and observe the immediate startup.
+- Review the available compression formats (ZIP, 7Z, TAR, and WIM).
+- Switch between Standard Layout and Dual Layout, and resize the window to see panels adapt dynamically.
+- Perform compression, extraction, and integrity test operations.
+- Open the Help menu to explore the updated User Manual.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version 2026.8.9.0
+August 9, 2026
+
+What was done:
+- Implemented a new dual layout in the interface, allowing for a more organized management of compression options.
+- Adjusted the interface to dynamically adapt to the new screen layout.
+- The internal version management system now automatically synchronizes the date with the operating system.
+- The built-in instruction manual and system languages were updated to cover these new features.
+
+What this means for you:
+- Interface navigation is more flexible, making better use of screen space with the new layout.
+- Faster and more organized internal processes.
+
+How to verify:
+- Update and open the program.
+- Test the new interface arrangement when configuring your files and resizing the window.
+- Access the user manual to see the updated instructions.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version: 0.0.4.0
+December 9, 2025
+
+What was done:
+- Visual fix: adjusted the calculation of the width of the column that contains the output labels and buttons, preventing part of the label text ("Specify Output", "Store ..." and "Clear Output") from being cut off.
+
+What this means for you:
+- Better readability: the labels now appear complete, without parts being cut off.
+- No change in behavior: the input boxes/directory lists keep the same behavior and continue sharing a consistent width across methods (ZIP, 7Z, TAR, WIM and Extraction). The logic that equalizes the width between the boxes was preserved.
+
+How to verify:
+- Update and open the program.
+- Open the compression methods section (ZIP, 7Z, TAR, WIM and Extraction).
+- Confirm that the labels and buttons in the left column appear complete, including when using longer labels or switching the language.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version: 0.0.3.0
+November 18, 2025
+
+What was done:
+- Visual adjustment: the boxes that display the output/extraction directories are now left-aligned across all methods (ZIP, 7Z, TAR, WIM, and Extraction).
+
+What this means for you:
+- Cleaner, easier-to-read interface.
+- No functional changes — visual improvement only.
+
+How to verify:
+- Update and open the program.
+- Check the alignment of the output boxes for each method.
+- Optional: test with long labels or another language to confirm.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version: 0.0.2.0
+October 28, 2025
+
+Summary:
+General stability improvements and bug fixes were implemented.
+
+Key features:
+- The purpose of the application remains the same: a lightweight graphical utility for Windows designed for packing, extracting and integrity-checking files and folders. It supports multiple formats (ZIP, 7Z, TAR, WIM and others recognized by 7‑Zip), selection of multiple output directories, configurable compression methods, a process queue and drag-and-drop operation. The interface is multilingual (pt_BR / en_US) and prepared for packaging as an executable (distribution without the need for manual installation of Python dependencies). No new features were added, preserving the simplicity and focus of the application.
+
+
+__________________________________________________________
+
+
+RELEASE NOTES: Version: 0.0.1.0
+October 7, 2025
+
+Summary:
+Manager Compression is a lightweight graphical utility for Windows designed for packing, extracting and integrity-checking files and folders. It supports multiple formats (ZIP, 7Z, TAR, WIM and others recognized by 7‑Zip), multiple output directories per format, configurable compression methods, a process queue, and drag-and-drop operation. The interface is multilingual (pt_BR / en_US) and prepared for packaging as a standalone executable (no manual Python dependency installation required for end users).
+
+Key features:
+- Compress folders and files into .zip, .7z, .tar and .wim formats.
+- Extract compressed archives in many formats supported by 7‑Zip (.zip, .7z, .tar, .wim, .bz2, .tar.xz, .tgz, .tar.gz, .zipx, .lzh, .iso, etc.).
+- Select and persist multiple output directories, independently per format.
+- Drag & drop support to add files and folders to input and output lists.
+- Configurable compression methods per format (levels 0–9 where applicable) with preference persistence.
+- "Save As" mode to create packages with specific settings without changing default preferences.
+- Option to update existing archives instead of recreating them.
+- Archive integrity testing using 7‑Zip's "t" command to validate packages.
+- Compression queueing: new jobs can wait while another task of the same format runs.
+- Translatable messages and dialogs; runtime language switching.
+- "About" dialog displays description, history, licenses, notices and privacy policy loaded from included resources.
+- Offline operation: all data is stored locally (configuration and preference files saved in the user's persistent directory).

@@ -1,0 +1,36 @@
+HISTÓRICO DO DESENVOLVIMENTO DO COMPRESSION MANAGER
+Versão: 2026.11.22.0
+===================================================
+
+1. Origem, Propósito e Motivação do Projeto:
+Desenvolvi o Compression Manager para automatizar tarefas rotineiras de backup, empacotamento, descompactação e verificação de integridade dos meus documentos, arquivos e pastas. O objetivo nasceu simples e pragmático: economizar tempo e reduzir a fricção operacional para que fosse possível dedicar mais energia às demais atividades diárias — estudo, engenharia, pesquisa, trabalho e vida pessoal — sem abrir mão da soberania e privacidade local sobre meus dados.
+
+Como estudante e profissional, precisei inúmeras vezes recuperar pacotes de projeto, entregar cópias compactadas em prazos curtos e manter versões históricas organizadas em destinos distintos. Em várias ocasiões, processos manuais repetitivos causavam versões perdidas ou pacotes incompletos. A repetição desses incidentes motivou a criação de uma ferramenta que:
+- Garantisse empacotamento consistente e verificável (teste de integridade bloco a bloco antes do arquivamento);
+- Simplificasse a configuração de múltiplos diretórios de saída independentes por formato;
+- Operasse 100% offline com total controle de privacidade, sem assinaturas, nuvem obrigatória ou telemetria.
+
+2. Uma Metáfora: A Caixa do Arquivista e o "Arquivo Fantasma":
+Imagine um arquivista que vive em uma torre de livros, guardando manuscritos preciosos. Um dia, um vento curioso — o "Arquivo Fantasma" — começa a bagunçar pilhas, misturar versões e espalhar cópias incompletas. O arquivista cria então uma caixa confiável, o Compression Manager: ao colocar um conjunto de pergaminhos dentro dela, a caixa organiza, compacta, verifica cada tomo e guarda cópias consistentes em lugares distintos da torre. Sempre que o vento sopra, a caixa age em segundo plano sem travar a mesa de trabalho, mantendo tudo íntegro e acessível. Essa imagem traduz a essência do projeto: proteger fluxos de backup, automatizar rotinas repetitivas e devolver tempo para viver e criar.
+
+3. Marcos Arquiteturais e Evolução Tecnológica:
+
+Fase 1 - Protótipo Inicial em Python e PySide6 (v0.0.1.0 – v0.0.4.0, 2025):
+- Concepção do fluxo multiformato inicial com seleção múltipla, arrastar e soltar, múltiplos diretórios de saída persistentes e integração externa ao 7-Zip.
+- Ajustes visuais de alinhamento de botões, rótulos multilíngues (pt_BR / en_US) e validação inicial de empacotamento em executável para Windows.
+
+Fase 2 - Refatoração Integral para C++ Nativo e Segregação Full vs. Standart (v2026.8.9.0 – v2026.10.16.0):
+- Reescrita completa da base Python/PySide6 para C++ nativo com Qt 6 Widgets, eliminando a sobrecarga do interpretador e o bloqueio de GIL em operações concorrentes.
+- Introdução de duas edições estritamente segregadas em tempo de compilação pela macro ENABLE_RAR_SUPPORT:
+  • Edição Full (ENABLE_RAR_SUPPORT=1): formatos RAR, ZIP, 7Z, TAR e WIM (7-Zip + WinRAR);
+  • Edição Standart (ENABLE_RAR_SUPPORT=0): exclusivamente formatos abertos ZIP, 7Z, TAR e WIM (7-Zip puro, sem dependências WinRAR/RAR).
+- Implementação do Layout Duplo paralelo com adaptação automática de orientação e sincronização automática de versão com o calendário (CalVer).
+
+Fase 3 - Modernização para C++23, Qt 6.12.0, Distribuições Ultralimpas e Duplo Licenciamento (v2026.10.17.0):
+- Estabilização definitiva da transição entre Layout Padrão e Layout Duplo com janela maximizada e reorientação fluida sem cortes de painéis.
+- Migração completa da cadeia de compilação para C++23 estrito, Qt 6.12.0, MSVC x64 14.52.37025 (Windows SDK 10.0.28000.0 com implantação CRT app-local, eliminando vc_redist.x64.exe) e MinGW-w64 GCC 15.1.0, orquestrados via CMake 3.28+ / Ninja.
+- Otimização extrema das distribuições externas e dos instaladores Inno Setup 7 (remoção de DLLs Qt não utilizadas, remoção de arquivos de licença proprietária não redistribuíveis e de banners da Microsoft Store dos pacotes de execução), resultando em instaladores compactos e binários estritamente isolados por toolchain.
+- Adoção formal do modelo de Duplo Licenciamento: GNU AGPLv3 para o código-fonte público no GitHub e EULA Oficial + CLC para os pacotes binários gratuitos oficiais/Microsoft Store, com documentação bilíngue completa em docs/ e source/assets/.
+
+4. Caráter Auxiliar Gratuito, Limitações e Responsabilidade ("AS IS"):
+Em todas as fases de sua evolução, o Compression Manager manteve-se como um aplicativo gratuito e auxiliar para organização, compactação, extração e teste de integridade de arquivos locais. Recomenda-se sempre executar o teste de integridade após compactações críticas e manter cópias de segurança redundantes em mídias ou locais independentes. O software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), sem garantias expressas ou implícitas, nos termos do EULA Oficial e das Seções 15 e 16 da GNU AGPLv3.

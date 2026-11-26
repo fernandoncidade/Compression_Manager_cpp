@@ -1,0 +1,42 @@
+ESCLARECIMENTO DE LICENCIAMENTO COMERCIAL E SUPORTE — COMPRESSION MANAGER
+Versão: 2026.11.22.0
+Data: 22 de novembro de 2026
+
+Autor e Desenvolvedor: Fernando Nillsson Cidade (Desenvolvedor Individual / Pessoa Física)
+E-mail de Suporte e Contato: linceu_lighthouse@outlook.com
+Site Oficial / Repositório: https://github.com/fernandoncidade/Compression_Manager_cpp
+Identidade MSIX: fernandoncidade.COMPRESSIONMANAGER
+
+--------------------------------------------------------------------------------
+
+1. CÓDIGO-FONTE ABERTO, DUPLO LICENCIAMENTO E TRANSPARÊNCIA:
+O código-fonte integral do COMPRESSION MANAGER em C++23 e Qt 6.12.0 é disponibilizado publicamente no GitHub sob a Licença GNU Affero General Public License v3 (GNU AGPLv3, SPDX: AGPL-3.0-only). Qualquer pessoa ou organização possui total liberdade para inspecionar, auditar, compilar (nas edições Full ou Standart, via MSVC ou MinGW), modificar e distribuir obras derivadas, desde que cumpra integralmente os termos copyleft da GNU AGPLv3.
+
+Os arquivos de documentação institucional em source/assets/ foram elaborados para conformidade com lojas digitais e instaladores; o autor concede expressamente aos desenvolvedores e forks liberdade total para adaptá-los ou substituí-los conforme a legislação e plataforma de suas próprias compilações.
+
+2. EDIÇÃO OFICIAL DA MICROSOFT STORE, INSTALADORES E DESINSTALAÇÃO LIMPA:
+Para conveniência de usuários domésticos, estudantes e profissionais em estações de trabalho Windows 10/11 x64, o autor disponibiliza oficialmente o COMPRESSION MANAGER como aplicação gratuita sob EULA Oficial (Microsoft Store / pacotes binários oficiais assinados pelo autor).
+- O pacote permite desinstalação limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar processos ocultos, drivers ou serviços em segundo plano.
+- É vedada a revenda comercial paga, o empacotamento enganoso ou a apropriação da marca sobre o binário oficial assinado pelo autor.
+
+3. POLÍTICA DE SUPORTE TÉCNICO E ISENÇÃO DA MICROSOFT:
+O desenvolvimento e a manutenção deste projeto são realizados pelo autor como iniciativa pessoal e independente. Por essa razão:
+a) A Microsoft NÃO presta suporte técnico nem atendimento ao cliente pelo COMPRESSION MANAGER, e a Política de Privacidade da Microsoft não cobre este aplicativo (aplica-se exclusivamente a Política de Privacidade própria em PRIVACY_POLICY);
+b) O suporte técnico fornecido pelo autor (desenvolvedor individual) ocorre por correio eletrônico (linceu_lighthouse@outlook.com) e publicamente pelas abas Issues e Discussions do repositório oficial no GitHub;
+c) O atendimento comunitário/gratuito ocorre em regime estritamente voluntário de melhores esforços (best-effort), conforme a disponibilidade do autor, sem obrigação de urgência, atendimento telefônico ou SLA comercial.
+
+4. ESCOPO TÉCNICO, LIMITAÇÕES E ISENÇÃO ("AS IS"):
+O COMPRESSION MANAGER é disponibilizado gratuitamente como ferramenta auxiliar de empacotamento, extração e verificação de integridade de arquivos locais (Edição Full: RAR, ZIP, 7Z, TAR, WIM; Edição Standart: ZIP, 7Z, TAR, WIM). O usuário deve manter cópias de segurança independentes de seus dados importantes e validar pacotes críticos por meio da verificação de integridade integrada. Na máxima extensão permitida em lei (Lei nº 9.609/1998, EULA Oficial e Seções 15–16 da GNU AGPLv3), o Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), sem garantias, cabendo ao usuário exclusiva responsabilidade por seus arquivos, backups e uso dos utilitários de terceiros invocados localmente.
+
+5. COMPONENTES DE TERCEIROS E COMPATIBILIDADE COMERCIAL:
+- Edição Standart (100% livre de componentes proprietários WinRAR/RAR): depende exclusivamente de Qt 6.12.0 (GNU LGPLv3), C++23 Runtime (MSVC CRT ou MinGW-w64 Runtime Exception) e 7-Zip (GNU LGPL / BSD 2-Clause / BSD 3-Clause com restrição unRAR). Recomendada como base para organizações que exigem conformidade estrita em formatos abertos.
+- Edição Full: inclui adicionalmente orquestração externa do utilitário WinRAR (win.rar GmbH / Alexander Roshal), sujeito a licença proprietária de seu respectivo titular caso redistribuído ou utilizado comercialmente nos termos do fabricante (nenhum arquivo rarreg.key acompanha este projeto).
+- Todos os textos integrais das licenças acompanham a distribuição no diretório LICENSES/ e no documento NOTICE.
+
+6. LICENCIAMENTO COMERCIAL SOB MEDIDA (EXCEÇÕES PROPRIETÁRIAS À AGPLv3):
+Para empresas, instituições acadêmicas ou integradores que necessitem de:
+- Isenção das obrigações copyleft da licença GNU AGPLv3 para distribuição fechada ou integração corporativa personalizada do código-fonte autoral do COMPRESSION MANAGER (excluindo componentes de terceiros regidos por suas próprias licenças, como WinRAR e Qt LGPLv3);
+- Contratos comerciais formais de manutenção, SLA dedicado, personalização de interface ou certificação corporativa interna sob medida (regidos por acordo contratual específico e pelas leis da República Federativa do Brasil, foro da Comarca de São José dos Pinhais/PR);
+
+Entre em contato diretamente pelo e-mail:
+linceu_lighthouse@outlook.com

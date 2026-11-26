@@ -1,0 +1,56 @@
+COMPRESSION MANAGER
+Versão: 2026.11.22.0
+Autores: Fernando Nillsson Cidade
+E-mail: linceu_lighthouse@outlook.com
+Repositório Oficial: https://github.com/fernandoncidade/Compression_Manager_cpp
+
+Resumo:
+COMPRESSION MANAGER é um utilitário gráfico nativo de alto desempenho para Windows (desenvolvido em C++23 e Qt 6.12.0 Widgets) projetado para empacotamento, extração, atualização e verificação de integridade de arquivos e pastas. Oferece suporte a múltiplos formatos (RAR na Edição Full; ZIP, 7Z, TAR, WIM nas edições Full e Standart; e extração de dezenas de formatos reconhecidos pelo 7-Zip e WinRAR), múltiplos diretórios de saída por formato, níveis de compressão configuráveis, processamento assíncrono em segundo plano, Layout Padrão e Layout Duplo adaptativo, interface bilíngue em tempo de execução (pt_BR / en_US) e distribuição autônoma para Windows 10/11 x64 sem necessidade de instalar interpretadores ou runtimes externos.
+
+Duas Edições Independentes de Produto:
+- Edição Full (ENABLE_RAR_SUPPORT=1): suporta empacotamento em RAR, ZIP, 7Z, TAR e WIM (motores 7-Zip e WinRAR) e extração ampla incluindo arquivos .rar.
+- Edição Standart (ENABLE_RAR_SUPPORT=0): focada exclusivamente em formatos abertos (ZIP, 7Z, TAR e WIM) com motor 7-Zip puro e segregação total contra dependências proprietárias RAR/WinRAR.
+
+Funcionalidades Principais:
+- Compressão de pastas e arquivos em .rar (Edição Full, níveis 0–5), .zip (0, 1, 3, 5, 7, 9), .7z (0, 1, 3, 5, 7, 9), .tar (0 - Armazenar) e .wim (0 - Armazenar).
+- Extração rápida preservando integralmente a árvore original de diretórios (.rar, .zip, .7z, .tar, .wim, .bz2, .tar.xz, .tgz, .tar.gz, .zipx, .lzh, .iso etc.).
+- Seleção e persistência de múltiplos diretórios de saída independentes por formato e para extração.
+- Arrastar e soltar (Drag & Drop) direto do Windows Explorer para listas de entrada e pastas de saída, com suporte inclusive a sessões elevadas via ponte UIPI WM_DROPFILES.
+- Opção 'Atualizar arquivos existentes' para sincronizar ou adicionar novos itens sem recriar pacotes do zero.
+- Verificação de integridade bloco a bloco (comando 't' do 7-Zip / WinRAR) sem precisar gravar arquivos extraídos em disco.
+- Dois modos de interface: Layout Padrão (Layout 1) e Layout Duplo paralelo (Layout 2) com orientação automática horizontal/vertical responsiva e preservação do estado maximizado.
+- Troca dinâmica de idioma entre Português (Brasil) e English (US) em tempo de execução, sem reiniciar o programa.
+- Operação 100% offline e Local-First: preferências, métodos e diretórios permanecem armazenados localmente em %LOCALAPPDATA%\CompressionManager\.
+
+Arquitetura Nativa e Implantação (C++23 / Qt 6.12.0):
+- Base GUI: C++23 nativo com Qt 6.12.0 (Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll e plugins nativos qwindows.dll / qmodernwindowsstyle.dll / qico.dll), sem dependência de Python ou PyInstaller.
+- Compiladores e Implantação App-Local: suporte dual para MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0 com DLLs CRT app-local, sem empacotar vc_redist.x64.exe) e MinGW-w64 x64 (GCC 15.1.0).
+- Motores de Compressão/Extração: invocação assíncrona em threads dedicadas via QProcess para 7-Zip (7zG.exe / 7z.exe) e, exclusivamente na Edição Full, WinRAR (WinRAR.exe), detectados nos caminhos padrão do sistema ou na subpasta local plugins\ do pacote.
+- Persistência Local: preferências de métodos e idiomas gravadas em JSON (%LOCALAPPDATA%\CompressionManager\config.json e language.json) e logs locais em %LOCALAPPDATA%\CompressionManager\logs\.
+
+Privacidade, Soberania de Dados e Desinstalação Limpa:
+- A Microsoft NÃO fornece política de privacidade nem suporte ao cliente para o COMPRESSION MANAGER; aplica-se exclusivamente a Política de Privacidade própria do Software (PRIVACY_POLICY).
+- Nenhum dado, nome de arquivo ou configuração é enviado a servidores externos pelo aplicativo.
+- Desinstalação limpa garantida pelas Configurações do Windows ou Menu Iniciar sem deixar serviços em segundo plano.
+
+Como Usar (Resumo Rápido):
+1. Adicione pastas e arquivos clicando em 'Adicionar Pastas' / 'Adicionar Arquivos' ou arrastando diretamente do Windows Explorer.
+2. Em 'Configurações > Selecionar Método de Compressão', ajuste o nível desejado por formato.
+3. Defina os diretórios de saída desejados clicando em 'Especificar Saída' (ou arrastando pastas para os quadros de destino).
+4. Selecione os formatos visíveis no painel de métodos ou ative 'Configurações > Layouts > Segundo Layout' para operar múltiplos fluxos lado a lado.
+5. Utilize os botões de armazenamento correspondentes (ex.: 'Armazenar ZIP', 'Armazenar 7Z') ou execute 'Testar Integridade' / 'Extrair Arquivos'.
+
+Duplo Licenciamento e Termos Legais ("AS IS"):
+- Código-fonte aberto disponibilizado no GitHub sob a Licença GNU Affero General Public License v3 (GNU AGPLv3 — arquivo LICENSE).
+- Pacote binário pré-compilado e assinado distribuído oficialmente gratuitamente (Microsoft Store / instaladores oficiais do autor) regido pelo EULA Oficial e Esclarecimento Comercial (CLC).
+- Componentes de terceiros integrados:
+  - Qt Framework 6.12.0 — Copyright (C) The Qt Company Ltd. (GNU LGPLv3).
+  - 7-Zip — Copyright (C) 1999-2025 Igor Pavlov (GNU LGPL, BSD 2-clause, BSD 3-clause e restrição unRAR), incluindo contribuições de Apple Inc. (LZFSE, BSD 3-clause), Facebook Inc. (ZSTD, BSD 3-clause), Yann Collet (XXH64, BSD 2-clause) e Alexander Roshal (restrição unRAR).
+  - WinRAR (exclusivamente na Edição Full) — Copyright (C) Alexander Roshal / win.rar GmbH (proprietário; nenhum arquivo rarreg.key é redistribuído com o projeto).
+  - MinGW-w64 / GCC Runtime Library (em builds MinGW) e Microsoft Visual C++ Runtime / Windows SDK.
+- Escopo Auxiliar Gratuito ("AS IS"): Este software é fornecido gratuitamente no estado em que se encontra ("AS IS"), sem garantias expressas ou implícitas, nos termos do EULA Oficial e das Seções 15 e 16 da GNU AGPLv3. Mantenha sempre cópias de segurança independentes de seus arquivos críticos e execute o teste de integridade após compactações importantes.
+
+Contato e Suporte:
+- Autor: Fernando Nillsson Cidade (Desenvolvedor Individual)
+- E-mail (voluntário / melhores esforços, sem SLA): linceu_lighthouse@outlook.com
+- Repositório Oficial: https://github.com/fernandoncidade/Compression_Manager_cpp

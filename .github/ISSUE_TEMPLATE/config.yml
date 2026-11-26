@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/fernandoncidade/Compression_Manager_cpp/discussions
+    about: Tire dúvidas gerais sobre uso, compilações MSVC/MinGW ou sugestões / Ask general usage, build, or design questions here.
+  - name: Security Vulnerability Reporting
+    url: https://github.com/fernandoncidade/Compression_Manager_cpp/security/advisories/new
+    about: Relate vulnerabilidades de segurança em sigilo / Report security vulnerabilities privately.

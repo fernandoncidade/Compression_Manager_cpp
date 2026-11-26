@@ -1,0 +1,42 @@
+COMMERCIAL LICENSING CLARIFICATION AND SUPPORT POLICY — COMPRESSION MANAGER
+Version: 2026.11.22.0
+Date: November 22, 2026
+
+Author and Developer: Fernando Nillsson Cidade (Individual Developer)
+Support & Contact Email: linceu_lighthouse@outlook.com
+Official Website / Repository: https://github.com/fernandoncidade/Compression_Manager_cpp
+MSIX Identity: fernandoncidade.COMPRESSIONMANAGER
+
+--------------------------------------------------------------------------------
+
+1. OPEN SOURCE CODEBASE, DUAL LICENSING AND TRANSPARENCY:
+The complete C++23 and Qt 6.12.0 source code of COMPRESSION MANAGER is publicly available on GitHub under the GNU Affero General Public License v3 (GNU AGPLv3, SPDX: AGPL-3.0-only). Any individual or organization is granted complete freedom to inspect, audit, compile (either the Full or Standart edition via MSVC or MinGW), modify, and distribute derivative works provided they fulfill the copyleft requirements of GNU AGPLv3.
+
+Institutional documents under source/assets/ were prepared to fulfill digital storefront and installer compliance; developers and forks are expressly granted complete freedom to alter, adapt, or replace those documents to suit applicable laws and target distribution platforms.
+
+2. OFFICIAL MICROSOFT STORE EDITION, INSTALLERS AND CLEAN UNINSTALLATION:
+For convenience across home, academic, and workplace Windows 10/11 x64 workstations, the author officially distributes COMPRESSION MANAGER free of charge under the Official EULA (Microsoft Store / author-signed official binary installers).
+- Users may cleanly uninstall and remove the package at any time through Windows Settings or the Start Menu without leaving hidden background processes, kernel drivers, or persistent services behind.
+- Paid commercial resale, misleading repackaging, or brand misappropriation of the author's digitally signed official binary package is strictly prohibited.
+
+3. TECHNICAL SUPPORT POLICY AND MICROSOFT NON-COVERAGE:
+Development and maintenance of this project are conducted by the author as a personal independent software initiative. Therefore:
+a) Microsoft does NOT provide customer or technical support for COMPRESSION MANAGER, and the Microsoft Privacy Statement does not cover this application (COMPRESSION MANAGER's own Privacy Policy in PRIVACY_POLICY applies exclusively);
+b) Technical support provided by the author (individual developer) takes place via email (linceu_lighthouse@outlook.com) and publicly via the Issues and Discussions tabs of the official GitHub repository;
+c) Free community support is provided strictly on a voluntary best-effort basis according to author availability, without guaranteed turnaround times, telephone support, or commercial SLA.
+
+4. TECHNICAL SCOPE, LIMITATIONS AND DISCLAIMER ("AS IS"):
+COMPRESSION MANAGER is distributed free of charge as an auxiliary desktop utility for local file packaging, extraction, and checksum integrity testing (Full Edition: RAR, ZIP, 7Z, TAR, WIM; Standart Edition: ZIP, 7Z, TAR, WIM). Users must always keep independent backups of critical data and validate important archives using the built-in integrity check. To the maximum extent permitted by applicable law (Brazilian Law No. 9.609/1998, Official EULA, and GNU AGPLv3 Sections 15–16), the Software is supplied "AS IS" without warranties, leaving sole responsibility for data stewardship, backups, and external compression utility usage upon the user.
+
+5. THIRD-PARTY COMPONENTS AND COMMERCIAL COMPLIANCE:
+- Standart Edition (100% free of proprietary WinRAR/RAR components): relies strictly on Qt 6.12.0 (GNU LGPLv3), C++23 Runtime (MSVC CRT or MinGW-w64 Runtime Exception), and 7-Zip (GNU LGPL / BSD 2-Clause / BSD 3-Clause with unRAR restriction). Recommended for organizations requiring pure open-format licensing hygiene.
+- Full Edition: additionally orchestrates the external WinRAR binary (win.rar GmbH / Alexander Roshal), which remains subject to its vendor's proprietary licensing if commercially redistributed or licensed under upstream terms (no rarreg.key file is ever bundled with this project).
+- Full third-party license texts accompany every distribution under the LICENSES/ folder and the NOTICE document.
+
+6. CUSTOM COMMERCIAL LICENSING (AGPLv3 PROPRIETARY EXCEPTIONS):
+For enterprises, academic institutions, or system integrators requiring:
+- An exemption from GNU AGPLv3 copyleft obligations for closed-source distribution or custom corporate integration of the author's original COMPRESSION MANAGER source code (excluding third-party tools governed by their own licenses, such as WinRAR and Qt LGPLv3);
+- Formal commercial maintenance contracts, dedicated SLAs, bespoke UI customization, or tailored enterprise compliance addenda (governed under separate written agreement and Brazilian law, venue of São José dos Pinhais, State of Paraná, Brazil);
+
+Please contact the author directly by email at:
+linceu_lighthouse@outlook.com

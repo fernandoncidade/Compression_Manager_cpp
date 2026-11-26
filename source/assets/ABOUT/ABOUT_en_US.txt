@@ -1,0 +1,56 @@
+COMPRESSION MANAGER
+Version: 2026.11.22.0
+Authors: Fernando Nillsson Cidade
+Email: linceu_lighthouse@outlook.com
+Official Repository: https://github.com/fernandoncidade/Compression_Manager_cpp
+
+Summary:
+COMPRESSION MANAGER is a native, high-performance graphical utility for Windows (built with modern C++23 and Qt 6.12.0 Widgets) designed for archiving, extracting, updating, and integrity-testing files and folders. It supports multiple archive formats (RAR in the Full Edition; ZIP, 7Z, TAR, and WIM in both Full and Standart editions; plus extraction of dozens of formats handled by 7-Zip and WinRAR), independent multiple output directories per format, configurable compression levels, asynchronous background processing, adaptive Standard and Dual Layouts, instant runtime language switching (pt_BR / en_US), and standalone self-contained Windows 10/11 x64 deployment without external runtime installers.
+
+Two Strictly Segregated Product Editions:
+- Full Edition (ENABLE_RAR_SUPPORT=1): supports archiving to RAR, ZIP, 7Z, TAR, and WIM (using 7-Zip and WinRAR engines) plus wide extraction including .rar archives.
+- Standart Edition (ENABLE_RAR_SUPPORT=0): focused exclusively on open standard formats (ZIP, 7Z, TAR, and WIM) powered strictly by 7-Zip, completely isolated from any WinRAR/RAR references or binaries.
+
+Key Features:
+- Compress folders and files into .rar (Full Edition, levels 0–5), .zip (0, 1, 3, 5, 7, 9), .7z (0, 1, 3, 5, 7, 9), .tar (0 - Store), and .wim (0 - Store).
+- Fast extraction strictly preserving original directory hierarchies (.rar, .zip, .7z, .tar, .wim, .bz2, .tar.xz, .tgz, .tar.gz, .zipx, .lzh, .iso, etc.).
+- Select and persist multiple independent output folders per archive format and extraction target.
+- Full Drag & Drop integration directly from Windows Explorer for both input lists and output targets, including native WM_DROPFILES fallback across elevated sessions (UIPI).
+- 'Update existing archives' mode to append or update files inside existing archives without recreating them from scratch.
+- Block-by-block checksum integrity testing (via 7-Zip / WinRAR 't' command) without writing extracted files to disk.
+- Dual layout workspaces: Standard Layout (Layout 1) and side-by-side Dual Layout (Layout 2) with automatic responsive horizontal/vertical orientation and maximized state preservation.
+- Dynamic runtime language switching between Português (Brasil) and English (US) without restarting.
+- 100% offline Local-First operation: all preferences, presets, and logs remain stored locally under %LOCALAPPDATA%\CompressionManager\.
+
+Native Architecture & Deployment (C++23 / Qt 6.12.0):
+- GUI Foundation: native C++23 with Qt 6.12.0 (Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll and native plugins qwindows.dll / qmodernwindowsstyle.dll / qico.dll), with zero Python or PyInstaller overhead.
+- Dual Compilers & App-Local Deployment: supports both MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0 with app-local CRT DLLs, without bundling vc_redist.x64.exe) and MinGW-w64 x64 (GCC 15.1.0).
+- Compression/Extraction Engines: asynchronous worker threads via QProcess invoking 7-Zip (7zG.exe / 7z.exe) and, exclusively in the Full Edition, WinRAR (WinRAR.exe), discovered from standard Windows installation paths or the bundled plugins\ directory.
+- Local Persistence: format methods and UI language stored as JSON (%LOCALAPPDATA%\CompressionManager\config.json and language.json), with execution logs under %LOCALAPPDATA%\CompressionManager\logs\.
+
+Privacy, Data Sovereignty, and Clean Uninstallation:
+- Microsoft does NOT provide a privacy policy or customer support for COMPRESSION MANAGER; the Software's own Privacy Policy (PRIVACY_POLICY) applies exclusively.
+- No files, directory paths, or settings are ever transmitted to external servers by the application.
+- Guaranteed clean removal via Windows Settings or the Start Menu without leaving background services behind.
+
+Quick Start:
+1. Add folders or files via 'Add Folders' / 'Add Files' or drag & drop directly from Windows Explorer.
+2. Adjust compression levels per format via 'Settings > Select Compression Method'.
+3. Specify target folders for each format via 'Specify Output' (or drag folders into destination panes).
+4. Toggle desired format panels or activate 'Settings > Layouts > Second Layout' for side-by-side workflows.
+5. Trigger compression buttons (e.g., 'Store ZIP', 'Store 7Z'), 'Test Integrity', or 'Extract Files'.
+
+Dual Licensing & Legal Terms ("AS IS"):
+- Open-source repository published on GitHub under the GNU Affero General Public License v3 (GNU AGPLv3 — LICENSE file).
+- Author's officially packaged, digitally signed binary distributions (Microsoft Store / official installers) governed by the Official EULA and Commercial Licensing Clarification (CLC).
+- Integrated Third-Party Components:
+  - Qt Framework 6.12.0 — Copyright (C) The Qt Company Ltd. (GNU LGPLv3).
+  - 7-Zip — Copyright (C) 1999-2025 Igor Pavlov (GNU LGPL, BSD 2-clause, BSD 3-clause, and unRAR restriction), incorporating code by Apple Inc. (LZFSE, BSD 3-clause), Facebook Inc. (ZSTD, BSD 3-clause), Yann Collet (XXH64, BSD 2-clause), and Alexander Roshal (unRAR restriction).
+  - WinRAR (Full Edition only) — Copyright (C) Alexander Roshal / win.rar GmbH (proprietary; no rarreg.key license file is redistributed with this project).
+  - MinGW-w64 / GCC Runtime Library (MinGW builds) and Microsoft Visual C++ Runtime / Windows SDK.
+- Free Auxiliary Scope ("AS IS"): Provided free of charge on an "AS IS" basis without express or implied warranties under the Official EULA and GNU AGPLv3 Sections 15–16. Always maintain independent backups of critical files and run integrity checks after important archive tasks.
+
+Contact and Support:
+- Author: Fernando Nillsson Cidade (Individual Developer)
+- Email (voluntary best-effort basis, no SLA): linceu_lighthouse@outlook.com
+- Official Repository: https://github.com/fernandoncidade/Compression_Manager_cpp

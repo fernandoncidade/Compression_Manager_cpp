@@ -1,0 +1,36 @@
+DEVELOPMENT HISTORY OF COMPRESSION MANAGER
+Version: 2026.11.22.0
+===========================================
+
+1. Origin, Purpose, and Development Motivation:
+I created Compression Manager to automate routine backup, packaging, decompression, and integrity-checking tasks for my documents, files, and folders. The goal was straightforward and pragmatic: save time and reduce operational friction so more energy could be devoted to daily life — study, engineering, research, work, and personal projects — without surrendering local data sovereignty or privacy.
+
+As a student and practitioner, I repeatedly needed to assemble project bundles, deliver compressed packages under tight deadlines, and keep organized historical copies across distinct target directories. Time and again, repetitive manual steps led to missed versions or incomplete archives. Those recurring friction points motivated a utility built to:
+- Ensure consistent, verifiable packaging (block-by-block integrity testing prior to long-term storage);
+- Simplify managing multiple independent destination directories per format;
+- Operate 100% offline with full local privacy control, zero subscriptions, zero mandatory cloud storage, and zero telemetry.
+
+2. A Metaphor: The Archivist's Box and the "Ghost Archive":
+Imagine an archivist living in a tower of books, safeguarding precious manuscripts. One day, a mischievous wind — the "Ghost Archive" — begins scattering stacks, mixing up revisions, and spreading incomplete copies. The archivist crafts a reliable box, Compression Manager: when scrolls are placed inside, the box organizes, compresses, verifies every volume, and stores consistent copies across separate corners of the tower. Whenever the wind blows, the box works quietly in the background without freezing the workbench, keeping everything intact and accessible. This image captures the spirit of the application: protecting backup workflows, automating tedious packaging steps, and giving back time to create.
+
+3. Architectural Milestones and Technical Evolution:
+
+Phase 1 - Initial Python and PySide6 Prototype (v0.0.1.0 – v0.0.4.0, 2025):
+- First multiformat workflow featuring drag-and-drop queues, multiple persistent output directories per format, and external 7-Zip orchestration.
+- UI layout alignment refinements, bilingual localization (pt_BR / en_US), and early standalone Windows packaging.
+
+Phase 2 - Complete Rewrite to Native C++ and Full vs. Standart Segregation (v2026.8.9.0 – v2026.10.16.0):
+- Full architectural migration from Python/PySide6 to native C++ with Qt 6 Widgets, eliminating interpreter startup latency and GIL concurrency bottlenecks.
+- Strict compile-time separation into two distinct product editions driven by ENABLE_RAR_SUPPORT:
+  • Full Edition (ENABLE_RAR_SUPPORT=1): supports RAR, ZIP, 7Z, TAR, and WIM (7-Zip + WinRAR);
+  • Standart Edition (ENABLE_RAR_SUPPORT=0): exclusively open standards ZIP, 7Z, TAR, and WIM (pure 7-Zip, zero WinRAR/RAR references or binaries).
+- Introduction of the adaptive Dual Layout parallel mode and calendar-versioning synchronization (CalVer).
+
+Phase 3 - C++23, Qt 6.12.0, Ultra-Lean Deployment & Dual Licensing (v2026.10.17.0):
+- Definitive stabilization of transitions between Standard Layout and Dual Layout while maximized, with fluid horizontal/vertical orientation adaptation and preserved queues.
+- Full toolchain upgrade to strict C++23, Qt 6.12.0, MSVC x64 14.52.37025 (Windows SDK 10.0.28000.0 using app-local CRT deployment, removing vc_redist.x64.exe) and MinGW-w64 GCC 15.1.0, orchestrated via CMake 3.28+ / Ninja.
+- Ultra-lean optimization of external distributions and Inno Setup 7 installers (pruning unused Qt modules/plugins, blocking non-redistributable license keys, and excluding Microsoft Store banner graphics from runtime bundles), yielding compact installers with strict toolchain isolation.
+- Formal adoption of the transparent Dual-Licensing framework: GNU AGPLv3 for public source code on GitHub and Official Store EULA + CLC for official signed binary packages, backed by comprehensive bilingual docs in docs/ and source/assets/.
+
+4. Free Auxiliary Nature, Limitations, and Legal Disclaimer ("AS IS"):
+Across every stage of its evolution, Compression Manager has remained a free auxiliary utility for organizing, compressing, extracting, and integrity-testing local files. Users are encouraged to run integrity tests after critical archive jobs and maintain redundant backups on independent media or locations. The software is provided "AS IS" without express or implied warranties under the Official EULA and GNU AGPLv3 Sections 15–16.
